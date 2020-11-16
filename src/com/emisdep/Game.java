@@ -8,8 +8,6 @@ public class Game {
 
     public void StartGame() {
 
-
-        YahtzeeConsole.welcome();
         Hand myHand = new Hand();
         myHand.roll(rand);
         for (var i = 0; i < 3; i++){
