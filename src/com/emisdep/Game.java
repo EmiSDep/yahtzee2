@@ -22,5 +22,7 @@ public class Game {
             }
             YahtzeeConsole.displayHand(myHand.getDice());
         }
+        if(myHand.Yahtzee()) {
+        }
     }
 }

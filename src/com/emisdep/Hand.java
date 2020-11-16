@@ -38,5 +38,16 @@ public class Hand {
         return values;
     }
 
+    public boolean Yahtzee() {
+        int isYahtzee = dice.get(0).getValue();
+        for(Die die: dice) {
+            if (isYahtzee != die.getValue()) {
+                System.out.println("Not Yahtzee");
+                return false;
+            }
+        }
+        System.out.println("YAHTZEE!");
+        return true;
+    }
 
 }
