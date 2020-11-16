@@ -2,8 +2,11 @@ package com.emisdep;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-public class YahtzeeConsole extends Console {
+public class YahtzeeConsole {
+
+    static Scanner scanner = new Scanner(System.in);
 
     static public void displayHand(List<Integer> dice) {
         System.out.println("---------");
