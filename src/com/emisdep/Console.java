@@ -9,12 +9,4 @@ public class Console {
         System.out.println("Welcome " + playerName);
     }
 
-    static public void log(String output) {
-        System.out.println(output);
-    }
-
-    static public void log(int output) {
-        System.out.println(output);
-    }
-
 }
