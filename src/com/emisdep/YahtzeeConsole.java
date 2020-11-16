@@ -16,14 +16,9 @@ public class YahtzeeConsole extends Console {
         System.out.print("\n---------\n");
     }
 
-    static public int getChoice() {
-        System.out.print("Which die do you want to reroll 1-5: ");
-        String reroll = scanner.nextLine();
-        return Integer.parseInt(reroll) - 1;
-    }
 
     static public List<Integer> getChoices() {
-        System.out.print("What die do you want to reroll : ");
+        System.out.print("Which dice do you want to reroll 1-5 (Include spaces for multiple dice): ");
         String input = scanner.nextLine();
         String[] inputArray = input.split(" ");
         List<Integer> choices = new ArrayList<>();
